@@ -1,0 +1,45 @@
+{% extends "news/layout.html" %}
+
+{% block title %}List Of HN Items{% endblock %}
+
+{% block content %}
+<section>
+    <div class="d-flex justify-content-center pt-4 pb-1">
+        <h1>HN Items Details Page</h1>
+    </div>
+    <div class="row">
+        <div class="d-flex justify-content-start pt-4 pb-1">
+            <h1>Title: {{ job.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="d-flex justify-content-start pb-4">
+            <div class="col">
+                <h2>Author: {{ job.author }}</h2>
+                <div class="row ">
+                    <div class="col-4 col-lg-2"> Type:
+                        <span class="badge bg-info">
+                            {{ job.type }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 col-lg-2">
+            <h4>Score: {{ job.score }}</h4>
+        </div>
+        <div class="col-4 col-lg-4">
+            <p>Link: <a href="{{ job.url }}">{{ job.url }}</a> </p>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-4 col-lg-4">
+            <p>{{ job.content }} </p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
