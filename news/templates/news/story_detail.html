@@ -1,11 +1,11 @@
 {% extends "news/layout.html" %}
 
-{% block title %}List Of HN Items{% endblock %}
+{% block title %}Story{% endblock %}
 
 {% block content %}
 <section>
     <div class="d-flex justify-content-center pt-4 pb-1">
-        <h1>HN Items Details Page</h1>
+        <h1>Story In Full</h1>
     </div>
     <div class="row">
         <div class="d-flex justify-content-start pt-4 pb-1">
@@ -38,7 +38,7 @@
     <div class="row pt-4">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 col-lg-6">
-            <div class="card shadow-0 border" style="background-color: #f0f2f5;">
+            <div class="card shadow-0 border" >
               <div class="card-body p-4">
                 {% for comment in comments %}
                 <div class="card mb-4">
